@@ -19,7 +19,7 @@ import { getServerSideURL } from '@/utilities/getURL'
 
 const beVietnamPro = Be_Vietnam_Pro({
   subsets: ['vietnamese', 'latin'],
-  variable: '--font-be-vietnam',
+  variable: '--font-ibm-plex-sans',
   display: 'swap',
   weight: ['300', '400', '500', '600', '700'],
   fallback: ['system-ui', 'arial'],

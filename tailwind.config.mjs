@@ -94,7 +94,7 @@ const config = {
         warning: 'hsl(var(--warning))',
       },
       fontFamily: {
-        sans: ['var(--font-geist-sans)', 'var(--font-be-vietnam)', 'var(--font-fallback)'],
+        sans: ['var(--font-ibm-plex-sans)', 'var(--font-geist-sans)', 'var(--font-fallback)'],
         mono: ['var(--font-geist-mono)', 'monospace'],
       },
       keyframes: {
