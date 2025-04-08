@@ -90,6 +90,8 @@
   }
   body {
     @apply bg-background text-foreground min-h-[100vh] flex flex-col;
+    font-family: var(--font-geist-sans), var(--font-fallback);
+    font-size: 1.05rem;
   }
 }
 
