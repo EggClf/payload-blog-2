@@ -14,8 +14,8 @@ export const Comments: CollectionConfig = {
       name: 'content',
       type: 'text',
       required: true,
-      validate: (value) => {
-        if (!value) return 'Content is required'
+      validate: (value: any) => {
+        if (!value || typeof value !== 'string') return 'Content is required'
         if (value.length < 10) return 'Content must be at least 10 characters long'
         return true
       },

@@ -25,7 +25,6 @@ export const Comments = async ({ postId }: CommentsProps) => {
       },
     },
   })
-  console.log('comments', comments.docs)
 
   return (
     <div className="max-w-2xl p-4">
