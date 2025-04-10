@@ -7,7 +7,7 @@ import { getPayload } from 'payload'
 import { draftMode } from 'next/headers'
 import React, { cache } from 'react'
 import RichText from '@/components/RichText'
-
+import { Comments } from '@/components/Comments'
 import type { Post } from '@/payload-types'
 
 import { PostHero } from '@/heros/PostHero'
@@ -69,6 +69,12 @@ export default async function Post({ params: paramsPromise }: Args) {
               docs={post.relatedPosts.filter((post) => typeof post === 'object')}
             />
           )}
+        </div>
+      </div>
+      <div className="container">
+        <div className="flex flex-col gap-4 pt-8">
+          <h2 className="text-2xl font-bold">Comments</h2>
+          <Comments postId={post.id} />
         </div>
       </div>
     </article>
